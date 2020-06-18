@@ -1,0 +1,71 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="utf-8")
+		meta(name="description", content="")
+		meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+		title Centro Mexicano para la Filantropía
+		link(rel="stylesheet", href="./css/materialdesignicons.min.css")
+		link(rel="stylesheet", href="./css/bootstrap.min.css")
+		link(rel="stylesheet", href="./css/global.css")
+		// Apariencia en el navegador
+		//-link(rel="shortcut icon", href="./favicon.ico")
+		//-link(rel="icon", sizes="192x192", href="./images/favicon.png")
+		meta(name="theme-color", content="#eb5d13")
+		meta(name="msapplication-navbutton-color", content="#eb5d13")
+		meta(name="apple-mobile-web-app-capable", content="yes")
+		meta(name="apple-mobile-web-app-status-bar-style", content="#eb5d13")
+		// Etiquetas para Social Media
+		//- https://css-tricks.com/essential-meta-tags-social-media/
+		meta(property="fb:app_id", content="{{ your_app_id }}")
+		meta(property="og:site_name", content="Centro Mexicano para la Filantropía")
+		meta(property="og:title", content=title)
+		meta(property="og:description", content="Cuenta institucional del Cemefi, asociación civil mexicana que promueve la filantropía, la responsabilidad social empresarial y la participación ciudadana.")
+		meta(property="og:image", content="./images/portada.jpg")
+		meta(property="og:url", content="{{ url }}")
+		meta(name="twitter:site", content="@cemefinforma")
+	body
+		#main.container
+			.row.py-4
+				.col-12.col-sm-6.ml-auto.mr-auto
+					.embed-responsive.embed-responsive-16by9.shadow-lg.rounded.mb-2
+						iframe.embed-responsive-item(src="https://www.youtube.com/embed/HWU-Yf0nRXk", frameborder="0", allow="accelerometer; autoplay; encrypted-media; gyroscope; piture-in-picture", allowfullscreen)
+					a.btn.btn-primary.mb-1.shadow.w-100(style="z-index:99", href="https://despensamx.cemefi.org/", rel="nofollow") Haz tu donación aquí
+					
+			.row.pb-4
+				.col-12.col-sm-4.ml-auto.mr-auto.text-center
+					.avatar
+					p <strong>Centro Mexicano para la Filantropía A.C.</strong> Asociación civil mexicana que promueve la filantropía, la responsabilidad social empresarial y la participación ciudadana.
+					
+			.row.pb-4
+				.col-12.col-sm-4.ml-auto.mr-auto
+					ul.nav.mb-3.justify-content-center.nav-tabs#pills-tab(role="tablist")
+						li.nav-item(role="presentation")
+							a.nav-link.active#pills-home-tab(data-toggle="pill", href="#pills-home", role="tab") Redes sociales
+						li.nav-item(role="presentation")
+							a.nav-link#pills-contacto-tab(data-toggle="pill", href="#pills-contacto", role="tab") Contacto
+					#pills-tabContent.tab-content
+						#pills-home.tab-pane.fade.show.active(role="tabpanel", aria-labelledby="pills-home-tab")
+							nav.nav.nav-pills.flex-column
+								a.nav-link.btn.btn-primary.mb-1.shadow(href="https://www.instagram.com/FONDODespensaMx/", rel="nofollow") <i class="mdi mdi-instagram"></i> Instagram
+								a.nav-link.btn.btn-primary.mb-1.shadow(href="https://twitter.com/cemefinforma", rel="nofollow") <i class="mdi mdi-twitter"></i> Twitter
+								a.nav-link.btn.btn-primary.mb-1.shadow(href="https://www.facebook.com/cemefi/", rel="nofollow") <i class="mdi mdi-facebook"></i> Facebook
+								a.nav-link.btn.btn-primary.mb-1.shadow(href="https://www.youtube.com/CanalCemefi", rel="nofollow") <i class="mdi mdi-youtube"></i> YouTube
+								a.nav-link.btn.btn-primary.mb-1.shadow(href="https://www.linkedin.com/company/centro-mexicano-para-la-filantrop-a/", rel="nofollow") <i class="mdi mdi-linkedin"></i> LinkedIn
+						#pills-contacto.tab-pane.fade(role="tabpanel", aria-labelledby="pills-profile-tab")
+							nav.nav.nav-pills.flex-column
+								a.nav-link.btn.btn-secondary.mb-1.shadow(href="http://www.cemefi.org/", rel="nofollow") <i class="mdi mdi-earth"></i> Sitio web
+								a.nav-link.btn.btn-secondary.mb-1.shadow(href="mailto:cemefi@cemefi.org", rel="nofollow") <i class="mdi mdi-email"></i> Correo electrónico
+								a.nav-link.btn.btn-secondary.mb-1.shadow(href="tel:+5215552776111", rel="nofollow") <i class="mdi mdi-phone-in-talk"></i> Teléfono
+			.row.pb-2
+				.col-12.col-sm-6.ml-auto.mr-auto
+					a(href="https://despensamx.cemefi.org/")
+						img.img-fluid.rounded.shadow-lg(src="./images/banner_despensa_largo_02.png")
+			#footer.row.py-4
+				.col-12.col-sm-4.ml-auto.mr-auto.text-center
+					p.mb-0 © 2019 Centro Mexicano para la Filantropía A.C.
+					p.mb-0 Cerrada de Salvador Alvarado #7, Col. Escandón, Alcaldía Miguel Hidalgo, Ciudad de México, México. C.P.11800
+		
+		script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js", integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj", crossorigin="anonymous")
+		script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js", integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo", crossorigin="anonymous")
+		script(src="./js/bootstrap.min.js")
